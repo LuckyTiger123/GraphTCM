@@ -66,15 +66,15 @@ usage: train_emb.py [-h] [--hidden_dim HIDDEN_DIM] [--device_num DEVICE_NUM] [--
 PyTorch implementation for training the representations.
 
 options:
-  -h, --help            				show this help message and exit
+  -h, --help            			show this help message and exit
   --hidden_dim HIDDEN_DIM 	  		hidden dimension
   --device_num DEVICE_NUM     			device number
   --epoch_num EPOCH_NUM       			epoch number
-  --lr LR               				learning rate
-  --seed SEED           				random seed
-  --dataset DATASET     				dataset
-  --path PATH           				path for the trained GraphTCM model
-  --target TARGET       				training target (ones or zeros)
+  --lr LR               			learning rate
+  --seed SEED           			random seed
+  --dataset DATASET     			dataset
+  --path PATH           			path for the trained GraphTCM model
+  --target TARGET       			training target (ones or zeros)
   --train_method TRAIN_METHOD			training method
 ```
 
