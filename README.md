@@ -46,13 +46,13 @@ PyTorch implementation for building the correlation.
 
 options:
   -h, --help            			show this help message and exit
-  --hidden_dim HIDDEN_DIM  		hidden dimension
+  --hidden_dim HIDDEN_DIM  			hidden dimension
   --pooling POOLING     			pooling type
-  --device_num DEVICE_NUM 		device number
+  --device_num DEVICE_NUM 			device number
   --epoch_num EPOCH_NUM 			epoch number
   --lr LR               			learning rate
   --seed SEED           			random seed
-  --valid_rate VALID_RATE  		validation rate
+  --valid_rate VALID_RATE  			validation rate
   --dataset DATASET     			dataset
 ```
 
