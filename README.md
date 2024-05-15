@@ -58,7 +58,7 @@ options:
 
 ## Training Representations
 
-After training a GraphTCM model, please run ``train_emb.py`` to obtain more effective self-supervised representations. To facilitate further experiments, we also provide the trained representations based on GraphTCM in the ``emb\`` directory, all named ``GraphTCM.pkl``.
+After training a GraphTCM model, please run ``train_emb.py`` to obtain more effective self-supervised representations. To facilitate further experiments, we also provide the trained representations based on GraphTCM in the ``emb/`` directory, all named ``GraphTCM.pkl``.
 
 ```python
 usage: train_emb.py [-h] [--hidden_dim HIDDEN_DIM] [--device_num DEVICE_NUM] [--epoch_num EPOCH_NUM] [--lr LR] [--seed SEED] [--dataset DATASET] [--path PATH] [--target TARGET] [--train_method TRAIN_METHOD]
@@ -67,23 +67,23 @@ PyTorch implementation for training the representations.
 
 options:
   -h, --help            				show this help message and exit
-  --hidden_dim HIDDEN_DIM 	  	hidden dimension
-  --device_num DEVICE_NUM     	device number
-  --epoch_num EPOCH_NUM       	epoch number
+  --hidden_dim HIDDEN_DIM 	  		hidden dimension
+  --device_num DEVICE_NUM     			device number
+  --epoch_num EPOCH_NUM       			epoch number
   --lr LR               				learning rate
   --seed SEED           				random seed
   --dataset DATASET     				dataset
   --path PATH           				path for the trained GraphTCM model
   --target TARGET       				training target (ones or zeros)
-  --train_method TRAIN_METHOD		training method
+  --train_method TRAIN_METHOD			training method
 ```
 
 ## Downstream Adaptations
 
-We have provided scripts with hyper-parameter settings to reproduce the experimental results presented in our paper. Please run ``run.sh`` under ``downstream\`` to obtain the downstream results across various datasets.
+We have provided scripts with hyper-parameter settings to reproduce the experimental results presented in our paper. Please run ``run.sh`` under ``downstream/`` to obtain the downstream results across various datasets.
 
 ```shell
-cd downstream\
+cd downstream/
 sh run.sh
 ```
 
