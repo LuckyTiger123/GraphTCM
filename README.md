@@ -30,9 +30,9 @@ We provide the representations obtained from training using these eight self-sup
 ## Correlation Value
 
 Given two self-supervised tasks $t_1,t_2\in \mathcal{T}$, a graph $\mathcal{G}:(\mathbf{A},\mathbf{X})$, we define the correlation value $\text{Cor}(t_1,t_2)$ as:
-$$
-\text{Cor}(t_1,t_2)=\frac{\min_{\mathbf{W}_{t_1}}\boldsymbol{l}_{t_2}(\mathbf{H}_{t_1}\cdot\mathbf{W}_{t_1},\mathbf{Y}_{t_2})}{\min_{\mathbf{W}_{t_2}}\boldsymbol{l}_{t_2}(\mathbf{H}_{t_2}\cdot\mathbf{W}_{t_2},\mathbf{Y}_{t_2})}
-$$
+
+$\text{Cor}(t_1,t_2)=\frac{\min_{\mathbf{W}_{t_1}}\boldsymbol{l}_{t_2}(\mathbf{H}_{t_1}\cdot\mathbf{W}_{t_1},\mathbf{Y}_{t_2})}{\min_{\mathbf{W}_{t_2}}\boldsymbol{l}_{t_2}(\mathbf{H}_{t_2}\cdot\mathbf{W}_{t_2},\mathbf{Y}_{t_2})}$
+
 We provide the correlation values for various self-supervised tasks across different datasets in ``train_GraphTCM.py``.
 
 ## Training GraphTCM
