@@ -115,7 +115,7 @@ class Combiner(nn.Module):
             raise NotImplementedError('Combine style {} is not implemented'.format(combine_style))
 
     def forward(self, H):
-        alpha = F.softmax(self.agg_weight, dim=0)
+        alpha = F.softmax(self.p, dim=0)
         H = H * alpha
         result = torch.sum(H, dim=0)
         return result
